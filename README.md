@@ -5,12 +5,12 @@ La intención de esta laboratorio es comprender los protocolos de comunicación 
 Básicamente los sistemas deberán realizar las ordenes dispuestas en el dispositivo maestro (Raspberry) y ejecutar las intrucciones en el dispositivo esclavo(Arduino).
 
 ## MATERIALES
-✓ 1 Computador con IDE de arduino y algún tipo de comunicación SSH para rapsberry
-✓ 1 Raspberry Pi B+
-✓ 1 Arduino (Cualquier versión o modelo)
-✓ 1 Diodo LED con su respectiva resistencia (330 ohmios)
-✓ 1 protoboard y cables de conexión
-✓ 1 pulsador
+* 1 Computador con IDE de arduino y algún tipo de comunicación SSH para rapsberry
+* 1 Raspberry Pi B+
+* 1 Arduino (Cualquier versión o modelo)
+* 1 Diodo LED con su respectiva resistencia (330 ohmios)
+* 1 protoboard y cables de conexión
+* 1 pulsador
 
 ## OBJETIVOS
 ▪ Afianzar los conceptos básicos asociados a Internet de las Cosas (IoT).
