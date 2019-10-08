@@ -27,8 +27,17 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 * Comunicación Full dúplex
 * Mayor velocidad de transmisión que otro bus serial.
 * Protocolo flexible en que se puede tener un control absoluto sobre los bits transmitidos.
-* Implementación en hardware extremadamente simple
+* Implementación en hardware simple
 * No está limitado a la transferencia de bloques de 8 bits
 * Elección del tamaño de la trama de bits, de su significado y propósito
+* Transferencia de datos síncrona de 3 hilos
+* Mayor rapidez comparado con I2C
+* Doble búfer para transmisión de datos
+* El maestro posee el control de todas las comunicaciones
+* Puede tener más de un esclavo
+* Menor gasto de energía comparado con I2C
+* Utiliza físicamente más puntos de conexión (pines) que I2C
+* Flujo de datos equivalente de 10 a 20 Mbps
+*
 
 
