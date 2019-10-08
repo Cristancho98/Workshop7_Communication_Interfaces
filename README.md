@@ -13,8 +13,19 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 * 1 pulsador
 
 ## OBJETIVOS
-▪ Afianzar los conceptos básicos asociados a Internet de las Cosas (IoT).
-▪ Familiarizarse con los protocolos típicos de comunicaciones entre dispositivos IoT vía cables.
+* Afianzar los conceptos básicos asociados a Internet de las Cosas (IoT).
+* Familiarizarse con los protocolos típicos de comunicaciones entre dispositivos IoT vía cables.
 ▪ Desarrollar dos aplicaciones sencillas para transferir comandos entre dos Raspberry Pi para encender y apagar un actuador LED utilizando I2C y SPI.
 ▪ Presentar las aplicaciones funcionando correctamente.
 ▪ Identificar las principales diferencias entre los protocolos de comunicación: I2C y SPI.
+
+# DESARROLLO Y PROCEDIMIENTO
+## CUADRO COMPARATIVO ENTRE SPI e I2C
+
+### Ventajas
+**SPI**
+*Comunicación Full dúplex
+*Mayor velocidad de transmisión que otro bus serial.
+*Protocolo flexible en que se puede tener un control absoluto sobre los bits transmitidos.
+* Implementación en hardware extremadamente simple
+
