@@ -20,8 +20,8 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 * Identificar las principales diferencias entre los protocolos de comunicación: I2C y SPI.
 
 # DESARROLLO Y PROCEDIMIENTO
-**CUADRO COMPARATIVO ENTRE SPI e I2C**
-### Ventajas
+### CUADRO COMPARATIVO ENTRE SPI e I2C
+**VENTAJAS**
 
 **SPI**
 * Comunicación Full dúplex
