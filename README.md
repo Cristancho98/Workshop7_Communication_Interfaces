@@ -1,7 +1,7 @@
 # WORKSHOP7: PROTOCOLOS DE COMUNICACIÓN I2C & SPI
 
 ## INTRODUCCIÓN
-La intención de esta laboratorio es comprender los protocolos de comunicación SPI e I2C y cómo desarrolarlosb utilizando scripts  de raspbian, para ello, usaremos una Rasberry Pi3 B+ y un Arduino uno para hacer la comunicación entre ellos empleando cada uno de los protocolos anteriormente mencionados. 
+La intención de este laboratorio es comprender los protocolos de comunicación SPI e I2C y cómo desarrolarlos utilizando scripts  de raspbian, para ello, usaremos una Rasberry Pi3 B+ y un Arduino uno para hacer la comunicación entre ellos empleando cada uno de los protocolos anteriormente mencionados. 
 Básicamente los sistemas deberán realizar las ordenes dispuestas en el dispositivo maestro (Raspberry) y ejecutar las intrucciones en el dispositivo esclavo(Arduino).
 
 ## MATERIALES
