@@ -91,7 +91,7 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 5. Instalar librerias usando sudo apt-get install rpi.gpio 
 5. Crear el script de Python usando sudo nano NOMBREDELSCRIPT.py (Tener presente en que directorio se guardo)
 
-**SCRIPT DE PYTHON**
+**SCRIPT DE PYTHON** ::
 "< soy un codigo >"
 
 
