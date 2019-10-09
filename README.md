@@ -43,3 +43,18 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 
 <a href="SPI"><img src="../master/Imagenes/SPI.png"  width="50%" align="justify"></a>
 
+**I2C**
+* velocidad de transmisión muy altas, simplicidad y funcionamiento
+* Puede transmitir y recibir información permitiendo que dos dispositivos se puedan comunicar entre si
+* Sistema de comunicación de muy corta distancia
+* La comunicaciín es en serie y sincrónica
+* Flujo de datos equivalente es de 3.4 Mbps
+* Utiliza menos pines comparado con SPI
+* Hardware más complejo comparado con SPI
+* La comunicación es más lenta comprada con SPI
+* Es multimaestro y multiesclavo
+* Utiliza dos hilos bidireccionales: SDA (Serial Data Line) y SCL (Serial Clock Line)
+* Usa de 7 a 10 bits de direcciones 
+* Permite velocidades de 100Kbits/s en standard mode, 10Kbits/s en low-speed mode, 400Kbits/s en Fast mode, 1Mbit/s en Fast mode plus y 3.4 Mbits/s en High speed mode
+
+<a href="I2C"><img src="../master/Imagenes/I2C.png"  width="50%" align="justify"></a>
