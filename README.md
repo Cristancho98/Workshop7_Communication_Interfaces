@@ -39,4 +39,5 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 * Utiliza físicamente más puntos de conexión (pines) que I2C
 * Flujo de datos equivalente de 10 a 20 Mbps
 
+![alt text](http://url/to/img.png) 
 
