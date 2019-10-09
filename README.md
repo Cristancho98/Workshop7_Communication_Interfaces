@@ -73,7 +73,7 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 
 ### DIAGRAMA DE BLOQUES DE LA SOLUCIÓN
 
-<a href="I2C"><img src="../master/Diagramas/Diagrama_Bloques.PNG"  width="70%" align="justify"></a>
+<a href="I2C"><img src="../master/Diagramas/Diagrama_Bloques.PNG"  width="50%" align="justify"></a>
 
 ## COMUNICACIÓN I2C
 **Procedimiento**
