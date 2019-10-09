@@ -1,4 +1,7 @@
 # WORKSHOP7: PROTOCOLOS DE COMUNICACIÓN I2C & SPI
+Realizado por: Daniel Cristancho
+Universida Sergio Arboleda, Bogotá-Colombia
+Ingeniería electrónica
 
 ## INTRODUCCIÓN
 La intención de este laboratorio es comprender los protocolos de comunicación SPI e I2C y cómo desarrolarlos utilizando scripts  de raspbian, para ello, usaremos una Rasberry Pi3 B+ y un Arduino uno para hacer la comunicación entre ellos empleando cada uno de los protocolos anteriormente mencionados. 
@@ -57,4 +60,18 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 * Usa de 7 a 10 bits de direcciones 
 * Permite velocidades de 100Kbits/s en standard mode, 10Kbits/s en low-speed mode, 400Kbits/s en Fast mode, 1Mbit/s en Fast mode plus y 3.4 Mbits/s en High speed mode
 
+**DIAGRAMA DE CONEXIÓN SPI**
+
 <a href="I2C"><img src="../master/Imagenes/I2C.png"  width="50%" align="justify"></a>
+
+### CRITERIOS DE DISEÑO
+
+1. Establecer comunicación Maestro-Esclavo utilizando SPI e I2C
+2. Permitir la recepción y el envio de datos entre maestro-esclavo según la comunicación empleada
+3. La señal detectada por el sistema debera generarla un pulsador
+4. Generar una alerta visual cuando el dato fue entregado exitosamente 
+5. Realizar el Script en raspbian por comunicación SSH (Aplica para rapsberry)
+
+### DIAGRAMA DE BLOQUES DE LA SOLUCIÓN
+
+
