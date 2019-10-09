@@ -236,4 +236,8 @@ El procedimiento realmente es igual al anterior, solo difiere al momento de crea
 
 **DIAGRAMA DE CONEXIÓN SPI** 
 
-<a href="I2C"><img src="../master/Esquemáticos/I2C_esquematico.PNG"  width="70%" align="center"></a>
+<a href="I2C"><img src="../master/Esquemáticos/SPI_esquematico.PNG"  width="70%" align="center"></a>
+
+**PRUEBAS DE FUNCIONAMIENTO** 
+
+Adjunto al repositorio se encuentra una carpeta llamada prueba SPI, ahí se encuentra un video con la evidencia de funcionamiento
