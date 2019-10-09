@@ -1,7 +1,8 @@
 # WORKSHOP7: PROTOCOLOS DE COMUNICACIÓN I2C & SPI
-Realizado por: Daniel Cristancho
-Universida Sergio Arboleda, Bogotá-Colombia
-Ingeniería electrónica
+
+* Realizado por: Daniel Cristancho
+* Universida Sergio Arboleda, Bogotá-Colombia
+* Ingeniería electrónica
 
 ## INTRODUCCIÓN
 La intención de este laboratorio es comprender los protocolos de comunicación SPI e I2C y cómo desarrolarlos utilizando scripts  de raspbian, para ello, usaremos una Rasberry Pi3 B+ y un Arduino uno para hacer la comunicación entre ellos empleando cada uno de los protocolos anteriormente mencionados. 
