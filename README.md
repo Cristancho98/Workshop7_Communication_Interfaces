@@ -24,7 +24,6 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 
 # DESARROLLO Y PROCEDIMIENTO
 ### CUADRO COMPARATIVO ENTRE SPI e I2C
-**VENTAJAS**
 
 **SPI**
 * Comunicación Full dúplex
