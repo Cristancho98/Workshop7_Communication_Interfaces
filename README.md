@@ -155,6 +155,11 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 
 <a href="I2C"><img src="../master/Esquemáticos/I2C_esquematico.PNG"  width="70%" align="center"></a>
 
+**PRUEBAS DE FUNCIONAMIENTO** 
+
+<a href="I2C"><img src="../master/Imagenes/Prueba1.jpeg"  width="50%" align="justify"></a>
+<a href="I2C"><img src="../master/Imagenes/Prueba2.jpeg"  width="50%" align="justify"></a>
+
 
 ## COMUNICACIÓN SPI
 **Procedimiento**
