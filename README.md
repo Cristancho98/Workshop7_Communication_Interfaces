@@ -42,3 +42,5 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 **DIAGRAMA DE CONEXIÓN**
 ![SPI](../master/Imagenes/SPI.png = 250x250 ) 
 
+![image](../master/Imagenes/SPI.png "Title" {width=40px height=400px})
+
