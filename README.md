@@ -44,3 +44,5 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 
 ![image](../master/Imagenes/SPI.png "Title" {width=40px height=400px})
 
+<a href="url"><img src="../master/Imagenes/SPI.png" align="left" height="48" width="48" ></a>
+
