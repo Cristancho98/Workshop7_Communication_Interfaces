@@ -39,6 +39,7 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 * Utiliza físicamente más puntos de conexión (pines) que I2C
 * Flujo de datos equivalente de 10 a 20 Mbps
 
-**DIAGRAMA DE CONEXIÓN**
-![SPI](../master/Imagenes/SPI.png) 
+**DIAGRAMA DE CONEXIÓN SPI**
+
+<a href="SPI"><img src="../master/Imagenes/SPI.png"  width="50%" align="justify"></a>
 
