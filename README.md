@@ -41,5 +41,5 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 
 **DIAGRAMA DE CONEXIÓN SPI**
 
-<a href="SPI"><img src="../master/Imagenes/SPI.png" height="550" width="250" ></a>
+<a href="SPI"><img src="../master/Imagenes/SPI.png" height="250" width="550" ></a>
 
