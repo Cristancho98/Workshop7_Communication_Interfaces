@@ -89,24 +89,65 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 3. Verificar la comunicación I2C usando sudo i2cdetect -y 1
 4. Instalar python sudo apt-get install python-smbus
 5. Instalar librerias usando sudo apt-get install rpi.gpio 
-5. Crear el script de Python usando sudo nano NOMBREDELSCRIPT.py (Tener presente en que directorio se guardo)
+6. Crear el script de Python usando sudo nano NOMBREDELSCRIPT.py (Tener presente en que directorio se guardo)
+7. Compilar el script usando python NOMBREDELSCRIPT.py
 
 **SCRIPT DE PYTHON** 
 
+    import smbus
+    import time
+    import Rpi.GPIO as GPIO         #IMPORTAR LIBRERIAS
+    
+    us = smbus.SMBus(1)            #i2c
+    address = 0x04                  #Direccion de conexion
+    
+    GPIO.setmode(GPIO.BCM)          #Iniciando GPIO
+    GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)     #GPIO18 como entrada (pin 12)
+    
+    def WBytes():
+        bus.write_byte(address,1)
+        return -1
+        
+    while true:                     #Encendido y apagado del led
+        if GPIO.input(18) == 1:
+                WBytes()
+                print ("Envio : ")
+        time.sleep(1)
 
-    "< soy un codigo >"
+**CONFIGURAR EL ARDUINO COMO ESCLAVO**
+**SCRIPT DE ARDUINO** 
 
-    git config branch.master.remote origin
+    #include <Wire.h>
+    char x='0';
+    void setup() {
 
-CONFIGURAR EL ARDUINO COMO ESCLAVO
+      //Estableciendo direccion con Raspberry Pi 3
+      Wire.begin(0x10);                   
+      Wire.onReceive(receiveEvent); 
 
-CODIGO ARDUINO 
+      //Estableciendo configuracion de Arduino
+      pinMode(LED_BUILTIN, OUTPUT);
+      pinMode(7 ,OUTPUT);
+      digitalWrite(LED_BUILTIN, LOW); 
+      Serial.begin(9600); 
+    }
+    void loop() { //Ciclo de encendido y apagado del LED
+      delay(100);
 
-para crear el scrip de python 
-
-
-cd /home
-sudo nano i2c.py
-
-
+      if(x==1){
+         Serial.println("Encendiendo");
+         digitalWrite(LED_BUILTIN, HIGH);
+         digitalWrite(7, HIGH);
+     }else{
+         Serial.println("Apagando");
+         digitalWrite(LED_BUILTIN, LOW);
+         digitalWrite(7, LOW);
+         }
+     }
+     
+    void receiveEvent(int howMany) {
+    while (Wire.available()) { 
+      x = Wire.read();
+      }
+    }
 
