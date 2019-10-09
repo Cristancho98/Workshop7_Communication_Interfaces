@@ -163,19 +163,75 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 
 ## COMUNICACIÓN SPI
 **Procedimiento**
-
-1. Iniciar la raspberry y acceder a la consola de comando
-
+El procedimiento realmente es igual al anterior, solo difiere al momento de crear los scripts
 
 **SCRIPT DE PYTHON** 
 
-    import smbus
-    
+    import time
+    import spidev
+    from gpiozero import Button
+
+    bus = 0
+    device = 1
+    btn = 0
+    btn = Button(5)
+
+    spi = spidev.SpiDev()
+
+    spi.open(bus, device)
+    spi.max_speed_hz = 500000
+    spi.mode = 0
+
+    while True:
+
+         if btn.is_pressed:
+                print("LOW")
+                msg = [0x00]
+                result = spi.xfer2(msg)
+         else:
+                print("HIGH")
+                msg = [0x01]
+                result = spi.xfer2(msg)
+
+         time.sleep(1)   
 
 **CONFIGURAR EL ARDUINO COMO ESCLAVO**
 **SCRIPT DE ARDUINO** 
 
-    #include <Wire.h>
+    #include <SPI.h>
+    #include <stdlib.h>
+
+    const int pinEsclavo = 10;
+    byte valR;
+
+    void setup (void)
+    {
+       SPI.begin ();   
+       Serial.begin(115200);
+
+       pinMode(SCK, INPUT);
+       pinMode(MISO, OUTPUT);
+       pinMode(MOSI, INPUT);
+       pinMode(pinEsclavo,INPUT);
+       pinMode(7 ,OUTPUT);
+       valR=0x00;
+       Serial.println(valR);
+       SPCR |= _BV(SPE);
+      }  
+
+     void loop (void)
+     {
+       valR = SPI.transfer(0);
+       Serial.println("Entro loop");
+       Serial.println(valR);
+       if(valR == 0){
+          Serial.println("Entro if");
+          digitalWrite(7, LOW);
+       }else{
+          Serial.println("Entro else");
+          digitalWrite(7, HIGH);
+       }
+     } 
     
 
 **DIAGRAMA DE CONEXIÓN SPI** 
