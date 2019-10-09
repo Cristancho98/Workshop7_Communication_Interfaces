@@ -74,3 +74,36 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 ### DIAGRAMA DE BLOQUES DE LA SOLUCIÓN
 
 
+### COMUNICACIÓN I2C
+** Procedimiento**
+
+1. Iniciar la raspberry y acceder a la consola de comando
+2. Configurar la raspberry
+  * sudo raspi-config
+  * selesccionar interfacing options
+  * seleccionar i2c 
+  * seleccionar si
+  * seleccionar aceptar
+  * seleccionar finish
+  
+3. Verificar la comunicación I2C usando sudo i2cdetect -y 1
+4. Instalar python sudo apt-get install python-smbus
+5. Instalar librerias usando sudo apt-get install rpi.gpio 
+5. Crear el script de Python usando sudo nano NOMBREDELSCRIPT.py (Tener presente en que directorio se guardo)
+
+**SCRIPT DE PYTHON**
+"< soy un codigo >"
+
+
+CONFIGURAR EL ARDUINO COMO ESCLAVO
+
+CODIGO ARDUINO 
+
+para crear el scrip de python 
+
+
+cd /home
+sudo nano i2c.py
+
+
+
