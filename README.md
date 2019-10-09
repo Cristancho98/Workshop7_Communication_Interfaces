@@ -75,7 +75,7 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 
 
 ### COMUNICACIÓN I2C
-** Procedimiento**
+**Procedimiento**
 
 1. Iniciar la raspberry y acceder a la consola de comando
 2. Configurar la raspberry
@@ -91,9 +91,12 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 5. Instalar librerias usando sudo apt-get install rpi.gpio 
 5. Crear el script de Python usando sudo nano NOMBREDELSCRIPT.py (Tener presente en que directorio se guardo)
 
-**SCRIPT DE PYTHON** ::
-"< soy un codigo >"
+**SCRIPT DE PYTHON** 
 
+
+    "< soy un codigo >"
+
+    git config branch.master.remote origin
 
 CONFIGURAR EL ARDUINO COMO ESCLAVO
 
