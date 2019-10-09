@@ -38,6 +38,5 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 * Menor gasto de energía comparado con I2C
 * Utiliza físicamente más puntos de conexión (pines) que I2C
 * Flujo de datos equivalente de 10 a 20 Mbps
-*
 
 
