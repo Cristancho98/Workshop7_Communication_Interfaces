@@ -40,5 +40,5 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 * Flujo de datos equivalente de 10 a 20 Mbps
 
 **DIAGRAMA DE CONEXIÓN**
-![SPI](../master/Imagenes/SPI.png) 
+![SPI](../master/Imagenes/SPI.png :scale: 5 %) 
 
