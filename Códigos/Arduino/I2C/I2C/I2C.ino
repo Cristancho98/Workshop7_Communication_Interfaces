@@ -1,41 +1,31 @@
 #include <Wire.h>
 
-char x='0';
+#define SLAVE_ADDRESS 0x04
+int number = 0;
+int state = 0;
 
 void setup() {
-
-//Estableciendo direccion con Raspberry Pi 3
-  Wire.begin(0x10);                   
-  Wire.onReceive(receiveEvent); 
-
-//Estableciendo configuracion de Arduino
-  pinMode(LED_BUILTIN, OUTPUT);
-  pinMode(7 ,OUTPUT);
-  digitalWrite(LED_BUILTIN, LOW); 
-  Serial.begin(9600); 
-  }
-
-
-//Ciclo de encendido y apagado del LED
-
-void loop() {
-  delay(100);
-
-  if(x==1){
-    Serial.println("Encendiendo");
-    digitalWrite(LED_BUILTIN, HIGH);
-    digitalWrite(7, HIGH);
-    }else{
-    Serial.println("Apagando");
-    digitalWrite(LED_BUILTIN, LOW);
-    digitalWrite(7, LOW);
-      }
+    pinMode(7, OUTPUT);
+    Serial.begin(9600);
+    Wire.begin(SLAVE_ADDRESS);
+    Wire.onReceive(receiveData);
+    Serial.println("Ready!");
 }
 
+void loop() {
+    delay(100);
+}
 
-void receiveEvent(int howMany) {
-  while (Wire.available()) { 
-    x = Wire.read(); 
+void receiveData(int byteCount){
 
-  }
+    while(Wire.available()) {
+          number = Wire.read();
+          Serial.print("data received: ");
+          Serial.println(number);
+
+          if (number == 1)
+              digitalWrite(7, HIGH); // set the LED on
+          else
+              digitalWrite(7, LOW); // set the LED on
+   }
 }
