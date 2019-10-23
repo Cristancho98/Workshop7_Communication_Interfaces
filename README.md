@@ -120,6 +120,7 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
 **SCRIPT DE ARDUINO** 
 
     #include <Wire.h>
+    #define SLAVE_ADDRESS 0x04
     char x='0';
     void setup() {
 
@@ -152,6 +153,7 @@ Básicamente los sistemas deberán realizar las ordenes dispuestas en el disposi
       x = Wire.read();
       }
     }
+    
 
 **DIAGRAMA DE CONEXIÓN I2C** 
 
